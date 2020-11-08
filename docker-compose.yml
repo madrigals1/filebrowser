@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  filebrowser:
+    image: hurlenko/filebrowser
+    user: "${UID}:${GID}"
+    ports:
+      - "${PORT}:8080"
+    volumes:
+      - "${DOCKER_STATIC_HOSTING}:/data"
+      - "./config:/config"
+    environment:
+      FB_BASEURL: "/filebrowser"
+      VIRTUAL_HOST: ${SSL_DOMAIN}
+      VIRTUAL_PORT: ${PORT}
+      LETSENCRYPT_HOST: ${SSL_DOMAIN}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+    restart: always
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external:
+      name: ${NGINX_PROXY_NETWORK}
