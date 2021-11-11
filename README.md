@@ -73,6 +73,7 @@ docker-compose down
 ## Usage
 
 - Access **Filebrowser** instance through `SSL_DOMAIN` or `localhost:PORT` from browser.
+- Initial credentials are **login: admin** and **password: admin**
 
 ## Authors
 - Adi Sabyrbayev [Github](https://github.com/madrigals1), [LinkedIn](https://www.linkedin.com/in/madrigals1/)
