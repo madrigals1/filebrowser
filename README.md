@@ -68,7 +68,8 @@ docker-compose down
 
 ## Usage
 
-- Access **Filebrowser** instance through `localhost:${PORT}` from browser or create **SSL Certificate** and **Proxy Host** using [Dockerized Nginx](https://github.com/madrigals1/nginx_proxy_manager) .
+- Access **Filebrowser** instance through `localhost:${PORT}` from browser or create **SSL Certificate** and **Proxy Host** using [Dockerized Nginx](https://github.com/madrigals1/nginx_proxy_manager)
+- Initial credentials are **login: admin** and **password: admin**
 
 ## Authors
 - Adi Sabyrbayev [Github](https://github.com/madrigals1), [LinkedIn](https://www.linkedin.com/in/madrigals1/)
