@@ -27,7 +27,7 @@ Environment variables:
 - `PORT` - port on which the app will be running.
 - `DOCKER_STATIC_HOSTING` - folder, that will be displayed.
 - HTTPS settings (Not needed without **Dockerized Nginx**):
-    - `HTTPS_NETWORK` - network, in which our HTTPS server will be running. 
+    - `HTTPS_NETWORK` - network, in which our **Dockertized Nginx** will be running. 
 
 ```dotenv
 # Docker settings
@@ -35,8 +35,6 @@ UID=0
 GID=0
 HTTPS_NETWORK=https_network
 DOCKER_STATIC_HOSTING=/var/www/static
-
-# Lets encrypt settings
 PORT=8888
 ```
 
