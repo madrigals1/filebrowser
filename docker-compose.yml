@@ -12,9 +12,6 @@ services:
       - "./config:/config"
     environment:
       FB_BASEURL: "/filebrowser"
-      VIRTUAL_HOST: ${SSL_DOMAIN}
-      VIRTUAL_PORT: ${PORT}
-      LETSENCRYPT_HOST: ${SSL_DOMAIN}
     restart: always
     networks:
       - https
