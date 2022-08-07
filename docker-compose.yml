@@ -1,8 +1,8 @@
-version: "3"
+version: "3.8"
 
 services:
   filebrowser:
-    image: hurlenko/filebrowser
+    image: hurlenko/filebrowser:latest
     container_name: filebrowser
     user: "${UID}:${GID}"
     ports:
@@ -18,5 +18,5 @@ services:
 
 networks:
   https:
-    external:
-      name: ${HTTPS_NETWORK}
+    name: ${HTTPS_NETWORK}
+    external: true
