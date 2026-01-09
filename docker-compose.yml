@@ -9,7 +9,7 @@ services:
       - "${DOCKER_STATIC_HOSTING}:/data"
       - "./config:/config"
     environment:
-      FB_BASEURL: "/filebrowser"
+      FB_BASE_URL: "/filebrowser"
     restart: always
     networks:
       - https
