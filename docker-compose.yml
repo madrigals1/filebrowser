@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   filebrowser:
     image: hurlenko/filebrowser:latest
