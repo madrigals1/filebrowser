@@ -57,19 +57,41 @@ docker-compose build
 ## Running
 
 Start
+
 ```
 docker-compose up
 ```
 
 Stop
+
 ```
 docker-compose down
 ```
 
+
+
 ## Usage
 
-- Access **Filebrowser** instance through `localhost:${PORT}` from browser or create **SSL Certificate** and **Proxy Host** using [Dockerized Nginx](https://github.com/madrigals1/nginx_proxy_manager)
-- Initial credentials are **login: admin** and **password: admin**
+Access **Filebrowser** instance through `localhost:${PORT}` from browser or
+create **SSL Certificate** and **Proxy Host** using
+[Dockerized Nginx](https://github.com/madrigals1/nginx_proxy_manager)
+
+### Getting a password
+
+On the first run, grab the default password from the logs:
+
+```
+filebrowser  | 2026/01/09 22:19:43 No config file used
+filebrowser  | 2026/01/09 22:19:43 WARNING: filebrowser.db can't be found. Initialing in /config/
+filebrowser  | 2026/01/09 22:19:43 Using database: /config/filebrowser.db
+filebrowser  | 2026/01/09 22:19:43 Performing quick setup
+filebrowser  | 2026/01/09 22:19:43 User 'admin' initialized with randomly generated password: blrXC1ab-onHYU0W
+filebrowser  | 2026/01/09 22:19:43 Listening on [::]:8080
+```
+
+As you can see from the logs above, the `blrXC1ab-onHYU0W` is the temporary
+password. You can change it in the UI later on.
 
 ## Authors
-- Adi Sabyrbayev [Github](https://github.com/madrigals1), [LinkedIn](https://www.linkedin.com/in/madrigals1/)
+- Adi Sabyrbayev [Github](https://github.com/madrigals1),
+[LinkedIn](https://www.linkedin.com/in/madrigals1/)
