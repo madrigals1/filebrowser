@@ -92,6 +92,10 @@ filebrowser  | 2026/01/09 22:19:43 Listening on [::]:8080
 As you can see from the logs above, the `blrXC1ab-onHYU0W` is the temporary
 password. You can change it in the UI later on.
 
+### Resetting a password
+
+To reset a password, delete `config/filebrowser.db`.
+
 ## Authors
 - Adi Sabyrbayev [Github](https://github.com/madrigals1),
 [LinkedIn](https://www.linkedin.com/in/madrigals1/)
