@@ -10,7 +10,7 @@ services:
       - "./config:/config"
     environment:
       FB_BASE_URL: "/filebrowser"
-    restart: always
+    restart: unless-stopped
     networks:
       - https
 
