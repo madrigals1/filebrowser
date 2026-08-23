@@ -31,8 +31,8 @@ Environment variables:
 
 ```dotenv
 # Docker settings
-UID=0
-GID=0
+UID=1000
+GID=1000
 HTTPS_NETWORK=https_network
 DOCKER_STATIC_HOSTING=/var/www/static
 PORT=8080
